@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		1EAA0665238C69A4008DD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0664238C69A4008DD73A /* AppDelegate.swift */; };
 		1EAA0667238C69A4008DD73A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0666238C69A4008DD73A /* SceneDelegate.swift */; };
-		1EAA0669238C69A4008DD73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0668238C69A4008DD73A /* ViewController.swift */; };
 		1EAA066C238C69A4008DD73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA066A238C69A4008DD73A /* Main.storyboard */; };
 		1EAA066E238C69A6008DD73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA066D238C69A6008DD73A /* Assets.xcassets */; };
 		1EAA0671238C69A6008DD73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAA066F238C69A6008DD73A /* LaunchScreen.storyboard */; };
+		1EAA0679238D9033008DD73A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA0678238D9033008DD73A /* WelcomeViewController.swift */; };
+		1EAA067B238D90C4008DD73A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAA067A238D90C4008DD73A /* LogInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EAA0661238C69A4008DD73A /* MirnaiaNV_HW2.5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirnaiaNV_HW2.5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAA0664238C69A4008DD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1EAA0666238C69A4008DD73A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1EAA0668238C69A4008DD73A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1EAA066B238C69A4008DD73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EAA066D238C69A6008DD73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EAA0670238C69A6008DD73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EAA0672238C69A6008DD73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAA0678238D9033008DD73A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		1EAA067A238D90C4008DD73A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				1EAA0664238C69A4008DD73A /* AppDelegate.swift */,
 				1EAA0666238C69A4008DD73A /* SceneDelegate.swift */,
-				1EAA0668238C69A4008DD73A /* ViewController.swift */,
+				1EAA067A238D90C4008DD73A /* LogInViewController.swift */,
+				1EAA0678238D9033008DD73A /* WelcomeViewController.swift */,
 				1EAA066A238C69A4008DD73A /* Main.storyboard */,
 				1EAA066D238C69A6008DD73A /* Assets.xcassets */,
 				1EAA066F238C69A6008DD73A /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1EAA0669238C69A4008DD73A /* ViewController.swift in Sources */,
+				1EAA067B238D90C4008DD73A /* LogInViewController.swift in Sources */,
+				1EAA0679238D9033008DD73A /* WelcomeViewController.swift in Sources */,
 				1EAA0665238C69A4008DD73A /* AppDelegate.swift in Sources */,
 				1EAA0667238C69A4008DD73A /* SceneDelegate.swift in Sources */,
 			);
