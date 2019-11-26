@@ -135,13 +135,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="g47-J6-EFG"/>
                     </view>
+                    <connections>
+                        <outlet property="login" destination="XHc-OD-2bn" id="dpQ-5F-XLn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22B-5F-Top" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1009" y="123"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="EHK-jM-Fxn"/>
-    </inferredMetricsTieBreakers>
 </document>

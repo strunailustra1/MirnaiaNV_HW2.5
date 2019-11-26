@@ -12,11 +12,12 @@ class LogInViewController: UIViewController {
 
     @IBOutlet var userName: UITextField!
     @IBOutlet var password: UITextField!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        userName.text = ""
+        password.text = ""
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -26,23 +27,18 @@ class LogInViewController: UIViewController {
         }
         return true
     }
-    //
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("prepare")
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let welcomeVC = segue.destination as! WelcomeViewController
+        welcomeVC.loginText = userName.text
     }
     
-    
     @IBAction func forgotUserButton() {
-        showAlert(title: "Oops!", message: "Your login is User😉")
+        showAlert(title: "Oops!", message: "Your name is User 😉")
     }
     
     @IBAction func forgotPassword() {
-        showAlert(title: "Oops!", message: "Your password is Password😉")
+        showAlert(title: "Oops!", message: "Your password is Password 😉")
     }
     
 }
@@ -50,9 +46,7 @@ class LogInViewController: UIViewController {
 extension LogInViewController {
     private func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            // self.textField.text = ""
-        }
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
