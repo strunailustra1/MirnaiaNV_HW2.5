@@ -69,7 +69,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.75284057408047478" green="0.97625964879989624" blue="0.87599946233469672" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Agt-tp-v2E" secondAttribute="trailing" constant="16" id="SJ1-HV-C5y"/>
                             <constraint firstItem="Agt-tp-v2E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iAz-KU-UHV"/>
@@ -127,7 +127,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UG8-1a-djt" firstAttribute="leading" secondItem="qHD-Ig-Y6w" secondAttribute="leading" constant="16" id="KkB-b9-VbX"/>
                             <constraint firstItem="g47-J6-EFG" firstAttribute="trailing" secondItem="UG8-1a-djt" secondAttribute="trailing" constant="16" id="bXz-q4-NtK"/>
