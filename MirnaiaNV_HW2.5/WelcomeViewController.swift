@@ -34,8 +34,15 @@ class Colors {
     var gl:CAGradientLayer!
 
     init() {
-        let colorTop = UIColor(red: 115.0 / 255.0, green: 252.0 / 255.0, blue: 214.0 / 255.0, alpha: 1.0).cgColor
-        let colorBottom = UIColor(red: 0.0 / 255.0, green: 144.0 / 255.0, blue: 81.0 / 255.0, alpha: 1.0).cgColor
+        let colorTop = UIColor(red: 115.0 / 255.0,
+                               green: 252.0 / 255.0,
+                               blue: 214.0 / 255.0,
+                               alpha: 1.0).cgColor
+        
+        let colorBottom = UIColor(red: 0.0 / 255.0,
+                                  green: 144.0 / 255.0,
+                                  blue: 81.0 / 255.0,
+                                  alpha: 1.0).cgColor
 
         self.gl = CAGradientLayer()
         self.gl.colors = [colorTop, colorBottom]
