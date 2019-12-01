@@ -13,17 +13,11 @@ class LogInViewController: UIViewController {
     @IBOutlet var userName: UITextField!
     @IBOutlet var password: UITextField!
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        userName.text = ""
-        password.text = ""
-    }
-    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         guard userName.text == "User", password.text == "Password" else {
             showAlert(title: "Invalid login or password",
-                      message: "Please, enter correct login and password")
+                      message: "Please, enter correct login and password",
+                      textFieid: password)
             return false
         }
         return true
@@ -42,12 +36,18 @@ class LogInViewController: UIViewController {
         showAlert(title: "Oops!", message: "Your password is Password 😉")
     }
     
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        userName.text = nil
+        password.text = nil
+    }
 }
 
 extension LogInViewController {
-    private func showAlert(title: String, message: String) {
+    private func showAlert(title: String, message: String, textFieid: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in }
+        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
+            textFieid?.text = nil
+        }
         alert.addAction(okAction)
         present(alert, animated: true)
     }
